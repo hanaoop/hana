@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Password </title>
+	<script>
+		function checkpassword() {
+		var password = document.getElementsById("passwordbox");
+	    var passwordText = password.value;
+	    if (passwordText == "1234"){
+	    	return true;
+	    }
+	    else{
+	    	alert("Access Denied")
+	    	return false;
+	    }
+	} 
+ </script>
+</head>
+<body>
+<p style ="font-size: 50px"> Welcome!</p>
+<p> Please enter password to view the folloing website!</p>
+<p> password: <input id="passwordbox" type="password"></p>
+<a href="Hana.html" onclick=" return checkpassword();"> Click here to submit password and view the website.</a>
+</body>
+</html>
